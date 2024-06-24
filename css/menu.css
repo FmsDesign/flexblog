@@ -1,0 +1,34 @@
+.cabecalho-bg {
+  background: var(--cor-p3);
+}
+
+.cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cabecalho li {
+  text-align: center;
+  padding: 20px;
+}
+
+/*  menu*/
+
+.menu-bg {
+  background: var(--cor-p1);
+  padding: 10px 0px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  padding: 8px 16px;
+}
+
+.menu_links {
+  display: flex;
+}
