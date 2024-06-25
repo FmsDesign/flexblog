@@ -1,0 +1,29 @@
+.produtos {
+  display: flex;
+  align-items: end;
+  gap: 24px;
+}
+
+.produtos-titulo {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.produtos h2 {
+  padding: 48px 16px;
+  background-color: var(--cor-3);
+}
+
+.purple {
+  border-top: 5px solid purple;
+}
+
+.red {
+  border-top: 5px solid red;
+}
+.blue {
+  border-top: 5px solid rgb(34, 125, 245);
+}
+.produtos img {
+  object-fit: cover;
+}

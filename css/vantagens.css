@@ -1,0 +1,35 @@
+.vantagens {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 60px auto;
+}
+
+.vantagens-item {
+  margin: 40px;
+  flex: 1;
+  min-width: 30ch;
+}
+
+.vantagens-item h3 {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 0px 8px;
+  align-items: center;
+}
+
+.vantagens-purple h3::before,
+.vantagens-red h3::before,
+.vantagens-blue h3::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 24px;
+  background-color: red;
+}
+.vantagens-purple h3::before {
+  background-color: purple;
+}
+.vantagens-blue h3::before {
+  background-color: aqua;
+}

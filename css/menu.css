@@ -6,10 +6,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0px;
 }
 .cabecalho li {
   text-align: center;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 /*  menu*/
@@ -23,12 +24,51 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 20px;
+  flex-wrap: wrap;
 }
 
 .menu a {
-  padding: 8px 16px;
+  padding: 16px 0px;
+  display: inline-block;
+  position: relative;
 }
 
 .menu_links {
   display: flex;
+  gap: 40px;
+}
+
+.menu_links a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: var(--cor-p5);
+  margin-top: 4px;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.menu_links a:hover::after {
+  width: 100%;
+}
+
+.menu_links a:hover {
+  color: var(--cor-p5);
+}
+
+/* header h1*/
+
+.titulo {
+  margin: 30px auto;
+}
+
+.titulo::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: var(--cor-11);
+  margin: 60px 0px;
 }
