@@ -1,14 +1,13 @@
 .vantagens {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   flex-wrap: wrap;
   margin: 60px auto;
 }
 
 .vantagens-item {
-  margin: 40px;
-  flex: 1;
-  min-width: 30ch;
+  flex: 1 1 300px;
+  margin: 20px 10px;
 }
 
 .vantagens-item h3 {

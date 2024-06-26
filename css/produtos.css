@@ -2,6 +2,7 @@
   display: flex;
   align-items: end;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .produtos-titulo {
@@ -9,9 +10,27 @@
   margin-top: 60px;
 }
 
-.produtos h2 {
+.produtos-titulo:first-child::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--cor-p1);
+  margin-bottom: 60px;
+}
+
+.produtos-itens {
+  flex: 1 1 300px;
+}
+
+.produtos-itens img {
+  object-fit: cover;
+}
+
+.produtos-itens h2 {
   padding: 48px 16px;
   background-color: var(--cor-3);
+  max-width: 600px;
 }
 
 .purple {
@@ -23,7 +42,4 @@
 }
 .blue {
   border-top: 5px solid rgb(34, 125, 245);
-}
-.produtos img {
-  object-fit: cover;
 }

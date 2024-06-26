@@ -49,6 +49,10 @@
   border: 4px solid var(--cor-10);
 }
 
+.preco-item sup {
+  font-size: 1.3rem;
+}
+
 .preco-item a:hover {
   background: var(--cor-4);
 }

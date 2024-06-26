@@ -4,10 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Descubra as últimas inovações em CSS que estão revolucionando o desenvolvimento web. O CSS Grid Layout facilita a criação de layouts complexos e responsivos, enquanto o Subgrid oferece controle sobre layouts aninhados.">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <title>Flex Blog</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -44,26 +55,28 @@
           <p class="font-m"> Descubra as últimas inovações em CSS que estão revolucionando o desenvolvimento web. O CSS Grid Layout facilita a criação de layouts complexos e responsivos, enquanto o Subgrid oferece controle sobre layouts aninhados.</p>
           <p class="font-m"> As Container Queries permitem aplicar estilos com base no tamanho de contêineres específicos, tornando os componentes mais flexíveis. As CSS Custom Properties (variáveis) simplificam a manutenção do código e possibilitam a criação de temas dinâmicos. Mantenha seu site moderno e eficiente com essas ferramentas poderosas.</p>
         </div>
-        <picture class="sobre-img">
+        <div class="sobre-img">
           <img src="./img/sobre1.webp" width="220" height="550" alt="">
+        </div>
+        <div class="sobre-img">
           <img src="./img/sobre2.webp" width="220" height="275" alt="">
-        </picture>
+        </div>
       </div>
     </article>
   </main>
 
   <article id="produtos" class="container">
     <h1 class=" font-xxl cor-12 produtos-titulo">Produtos</h1>
-    <div class="produtos ">
-      <div>
+    <div class="produtos">
+      <div class="produtos-itens">
         <h2 class="font-xl cor-7 purple">Purple</h2>
         <img src="./img/produtos1.webp" width="600" height="500" alt="produto1">
       </div>
-      <div>
+      <div class="produtos-itens">
         <h2 class="font-xl cor-7 red">Red</h2>
         <img src="./img/produtos2.webp" width="600" height="700" alt="produto2">
       </div>
-      <div>
+      <div class="produtos-itens">
         <h2 class="font-xl cor-7 blue">Blue</h2>
         <img src="./img/produtos3.webp" width="600" height="600" alt="produto3">
       </div>
@@ -76,7 +89,7 @@
     <div class="preco container ">
       <div class="preco-item">
         <h2 class="font-xl cor-7 ">Cobre</h2>
-        <span class="font-xl cor-10"><sup> R$</sup> 19</span>
+        <span class="font-xxl cor-10"><sup> R$</sup> 19</span>
         <ul class="font-xs cor-8">
           <li>
             planos ilimitados
@@ -89,7 +102,7 @@
       </div>
       <div class="preco-item">
         <h2 class="font-xl cor-7 ">Prata</h2>
-        <span class="font-xl cor-10"><sup> R$</sup> 39</span>
+        <span class="font-xxl cor-10"><sup> R$</sup> 39</span>
         <ul class="font-xs cor-8">
           <li>
             planos ilimitados
@@ -104,7 +117,7 @@
 
       <div class="preco-item">
         <h2 class="font-xl cor-7 ">ouro</h2>
-        <span class="font-xl cor-10"><sup> R$</sup> 79</span>
+        <span class="font-xxl cor-10"><sup> R$</sup> 79</span>
         <ul class="font-xs cor-8">
           <li>
             planos ilimitados
@@ -153,10 +166,10 @@
     <div class="email container">
       <div class="email-item1">
         <h1 class="font-xl cor-8">Newsletter</h1>
-        <p class="font-xs cor-6">assine e fique por dentro <br> das novidades</p>
+        <p class="font-xs cor-6">assine e fique por dentro das novidades</p>
       </div>
       <form class="email-item2">
-        <div class="email-1">
+        <div class="flex-1">
           <input class="font-s cor-10 " placeholder="Seu Email" type="email" id="email" name="email">
         </div>
         <button class="botao font-m cor-1">ASSINAR</button>
